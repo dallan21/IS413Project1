@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using IS413Project1.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -24,6 +26,12 @@ namespace IS413Project1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            // This will configure the connection string set up on appsettings.json
+            services.AddDbContext<NewTaskContext>(options =>
+            {
+                options.UseSqlite(Configuration["ConnectionStrings:taskConnection"]);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

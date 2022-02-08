@@ -1,4 +1,30 @@
 ﻿<Properties StartupConfiguration="{F50FEDA8-BA65-41B0-AD56-E7D09440723F}|Default">
-  <MonoDevelop.Ide.ItemProperties.IS413Project1 FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="IS413Project1/Models/NewTaskContext.cs">
+    <Files>
+      <File FileName="IS413Project1/Startup.cs" Line="23" Column="53" />
+      <File FileName="IS413Project1/Models/NewTaskContext.cs" Line="16" Column="29" />
+      <File FileName="IS413Project1/Program.cs" Line="1" Column="1" />
+      <File FileName="IS413Project1/Models/NewTaskForm.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="IS413Project1" expanded="True">
+            <Node name="IS413Project1" expanded="True">
+              <Node name="Models" expanded="True">
+                <Node name="NewTaskContext.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.IS413Project1 FirstBuild="True" PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
