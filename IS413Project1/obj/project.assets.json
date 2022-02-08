@@ -1205,7 +1205,7 @@
       "outputPath": "/Users/dallanhernandez/Documents/GitHub/IS413Project1/IS413Project1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/dallanhernandez/.config/NuGet/NuGet.Config"
+        "/Users/dallanhernandez/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
