@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Add a New Task";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+@model NewTaskForm
+
+@*This is the form*@
+<form method="post">
+    <fieldset  style="background-color: aquamarine; margin-right: auto; margin-left: auto">
+
+        <label for="task">Task:</label>
+        <input type="text" id="task" name="task" asp-for="Task" required /><br />
+
+        <label for="duedate">Due Date:</label>
+        <input type="date" id="duedate" name="duedate" asp-for="DueDate" required /><br />
+
+        <label for="quadrant">Quadrant:</label>
+        <select name="quadrant" id="quadrant" asp-for="Quadrant">
+            <option value="">Select a Quadrant</option>
+            <option value="Quandrant 1">Quadrant 1</option>
+            <option value="Quandrant 2">Quadrant 2</option>
+            <option value="Quandrant 3">Quadrant 3</option>
+            <option value="Quandrant 4">Quadrant 4</option>
+        </select><br />
+
+        <label asp-for="@Model.CategoryId">Category:</label>
+        <select name="category" id="category" asp-for="@Model.CategoryId" required>
+            <option value="">Select a Category</option>
+            @foreach (Category c in ViewBag.Categories)
+
+            {
+                <option value="@c.CategoryId">@c.CategoryName</option>
+            }
+
+        </select><br />
+
+        <label for="completed">Completed?</label>
+        <input type="checkbox" id="completed" name="completed" asp-for="Completed" /><br />
+
+        <button type="submit">Add to Database</button>
+    </fieldset>
+</form>

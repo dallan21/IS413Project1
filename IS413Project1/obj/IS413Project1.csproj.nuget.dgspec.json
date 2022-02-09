@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dallanhernandez/Documents/GitHub/IS413Project1/IS413Project1/IS413Project1.csproj": {}
+    "/Users/dannybellboy/Documents/IS413Project1/IS413Project1/IS413Project1.csproj": {}
   },
   "projects": {
-    "/Users/dallanhernandez/Documents/GitHub/IS413Project1/IS413Project1/IS413Project1.csproj": {
+    "/Users/dannybellboy/Documents/IS413Project1/IS413Project1/IS413Project1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dallanhernandez/Documents/GitHub/IS413Project1/IS413Project1/IS413Project1.csproj",
+        "projectUniqueName": "/Users/dannybellboy/Documents/IS413Project1/IS413Project1/IS413Project1.csproj",
         "projectName": "IS413Project1",
-        "projectPath": "/Users/dallanhernandez/Documents/GitHub/IS413Project1/IS413Project1/IS413Project1.csproj",
-        "packagesPath": "/Users/dallanhernandez/.nuget/packages/",
-        "outputPath": "/Users/dallanhernandez/Documents/GitHub/IS413Project1/IS413Project1/obj/",
+        "projectPath": "/Users/dannybellboy/Documents/IS413Project1/IS413Project1/IS413Project1.csproj",
+        "packagesPath": "/Users/dannybellboy/.nuget/packages/",
+        "outputPath": "/Users/dannybellboy/Documents/IS413Project1/IS413Project1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/dallanhernandez/.nuget/NuGet/NuGet.Config"
+          "/Users/dannybellboy/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -51,6 +51,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.22, )"
+            },
+            "ToList": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [

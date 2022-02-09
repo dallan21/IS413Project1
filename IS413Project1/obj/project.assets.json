@@ -446,6 +446,15 @@
         "runtime": {
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
         }
+      },
+      "ToList/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/ToList.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ToList.dll": {}
+        }
       }
     }
   },
@@ -1183,29 +1192,42 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "ToList/1.0.0": {
+      "sha512": "aBXgQNDqGDZaDH2kkKzrUcrGCOosZ7EO2XpSkveOidtzZhBF4U11UaV/BmZMb/Ue16Ljua1I42NYeO7NqNAy7Q==",
+      "type": "package",
+      "path": "tolist/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/ToList.dll",
+        "tolist.1.0.0.nupkg.sha512",
+        "tolist.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.EntityFrameworkCore >= 3.1.22",
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.22",
-      "Microsoft.EntityFrameworkCore.Tools >= 3.1.22"
+      "Microsoft.EntityFrameworkCore.Tools >= 3.1.22",
+      "ToList >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "/Users/dallanhernandez/.nuget/packages/": {}
+    "/Users/dannybellboy/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dallanhernandez/Documents/GitHub/IS413Project1/IS413Project1/IS413Project1.csproj",
+      "projectUniqueName": "/Users/dannybellboy/Documents/IS413Project1/IS413Project1/IS413Project1.csproj",
       "projectName": "IS413Project1",
-      "projectPath": "/Users/dallanhernandez/Documents/GitHub/IS413Project1/IS413Project1/IS413Project1.csproj",
-      "packagesPath": "/Users/dallanhernandez/.nuget/packages/",
-      "outputPath": "/Users/dallanhernandez/Documents/GitHub/IS413Project1/IS413Project1/obj/",
+      "projectPath": "/Users/dannybellboy/Documents/IS413Project1/IS413Project1/IS413Project1.csproj",
+      "packagesPath": "/Users/dannybellboy/.nuget/packages/",
+      "outputPath": "/Users/dannybellboy/Documents/IS413Project1/IS413Project1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/dallanhernandez/.nuget/NuGet/NuGet.Config"
+        "/Users/dannybellboy/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -1242,6 +1264,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[3.1.22, )"
+          },
+          "ToList": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           }
         },
         "imports": [

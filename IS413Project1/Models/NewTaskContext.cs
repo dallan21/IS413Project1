@@ -1,5 +1,11 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
+
 
 namespace IS413Project1.Models
 {

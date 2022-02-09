@@ -11,6 +11,9 @@ namespace IS413Project1.Models
 
        public string CategoryName { get; set; }
 
-        
+        internal dynamic ToList()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
