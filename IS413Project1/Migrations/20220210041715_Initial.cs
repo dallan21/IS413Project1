@@ -27,7 +27,7 @@ namespace IS413Project1.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Task = table.Column<string>(nullable: true),
                     DueDate = table.Column<string>(nullable: true),
-                    Quadrant = table.Column<int>(nullable: false),
+                    Quadrant = table.Column<string>(nullable: false),
                     Completed = table.Column<bool>(nullable: false),
                     CategoryId = table.Column<int>(nullable: false)
                 },
@@ -61,6 +61,31 @@ namespace IS413Project1.Migrations
                 table: "categories",
                 columns: new[] { "CategoryId", "CategoryName" },
                 values: new object[] { 4, "Church" });
+
+            migrationBuilder.InsertData(
+                table: "responses",
+                columns: new[] { "TaskId", "CategoryId", "Completed", "DueDate", "Quadrant", "Task" },
+                values: new object[] { 2, 1, false, "	2022-02-15", "Quadrant 1", "Buy Groceries" });
+
+            migrationBuilder.InsertData(
+                table: "responses",
+                columns: new[] { "TaskId", "CategoryId", "Completed", "DueDate", "Quadrant", "Task" },
+                values: new object[] { 1, 2, false, "	2022-02-11", "Quadrant 3", "455 Homework" });
+
+            migrationBuilder.InsertData(
+                table: "responses",
+                columns: new[] { "TaskId", "CategoryId", "Completed", "DueDate", "Quadrant", "Task" },
+                values: new object[] { 3, 2, false, "2022-02-09", "Quadrant 1", "Mission 6" });
+
+            migrationBuilder.InsertData(
+                table: "responses",
+                columns: new[] { "TaskId", "CategoryId", "Completed", "DueDate", "Quadrant", "Task" },
+                values: new object[] { 5, 2, false, "2022-02-14", "Quadrant 4", "Study for 403 Exam" });
+
+            migrationBuilder.InsertData(
+                table: "responses",
+                columns: new[] { "TaskId", "CategoryId", "Completed", "DueDate", "Quadrant", "Task" },
+                values: new object[] { 4, 4, false, "2022-02-27", "Quadrant 2", "Prepare Talk" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_responses_CategoryId",

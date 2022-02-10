@@ -7,9 +7,9 @@ namespace IS413Project1.Models
     {
         [Key]
         [Required]
-       public int CategoryId { get; set; }
+        public int CategoryId { get; set; }
 
-       public string CategoryName { get; set; }
+        public string CategoryName { get; set; }
 
         internal dynamic ToList()
         {

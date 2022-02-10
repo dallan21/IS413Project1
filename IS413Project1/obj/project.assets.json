@@ -1215,24 +1215,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/dannybellboy/.nuget/packages/": {}
+    "C:\\Users\\natet\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dannybellboy/Documents/IS413Project1/IS413Project1/IS413Project1.csproj",
+      "projectUniqueName": "C:\\Users\\natet\\source\\repos\\Projects\\IS413Project1\\IS413Project1\\IS413Project1.csproj",
       "projectName": "IS413Project1",
-      "projectPath": "/Users/dannybellboy/Documents/IS413Project1/IS413Project1/IS413Project1.csproj",
-      "packagesPath": "/Users/dannybellboy/.nuget/packages/",
-      "outputPath": "/Users/dannybellboy/Documents/IS413Project1/IS413Project1/obj/",
+      "projectPath": "C:\\Users\\natet\\source\\repos\\Projects\\IS413Project1\\IS413Project1\\IS413Project1.csproj",
+      "packagesPath": "C:\\Users\\natet\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\natet\\source\\repos\\Projects\\IS413Project1\\IS413Project1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/dannybellboy/.config/NuGet/NuGet.Config"
+        "C:\\Users\\natet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1288,7 +1290,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.404/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

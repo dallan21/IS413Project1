@@ -16,7 +16,7 @@ namespace IS413Project1.Models
 
         public string DueDate { get ; set; }
         [Required]
-        public int Quadrant { get; set; }
+        public string Quadrant { get; set; }
         //True/False
         public bool Completed { get; set; }
 

@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "Delete Task";
+}
+
+@model List<NewTaskForm>
+
+<div class="container" style="text-align: center;">
+    <div class="row">
+        <h2 class="col-12">Tasks Arranged by Time Management Matrix</h2>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-3"></div>
+        <h4 class="col">Urgent</h4>
+        <h4 class="col">Not Urgent</h4>
+    </div>
+
+    <br /><br />
+
+    <div class="row">
+        <h4 class="col-3">Important</h4>
+        <div class="col font-weight-bold">Quadrant 1
+            @foreach (var x in Model)
+            {
+                @if (x.Quadrant == "Quadrant 1")
+                {
+                    <div class="font-weight-normal">@x.Task</div>
+                }
+            }
+        </div>
+        <div class="col font-weight-bold">Quadrant 2
+            @foreach (var x in Model)
+            {
+                @if (x.Quadrant == "Quadrant 2")
+                {
+                    <div class="font-weight-normal">@x.Task</div>
+                }
+            }
+        </div>
+    </div>
+
+    <br /><br />
+
+    <div class="row">
+        <h4 class="col-3">Not Important</h4>
+        <div class="col font-weight-bold">Quadrant 3
+            @foreach (var x in Model)
+            {
+                @if (x.Quadrant == "Quadrant 3")
+                {
+                    <div class="font-weight-normal">@x.Task</div>
+                }
+            }
+        </div>
+        <div class="col font-weight-bold">Quadrant 4
+            @foreach (var x in Model)
+            {
+                @if (x.Quadrant == "Quadrant 4")
+                {
+                    <div class="font-weight-normal">@x.Task</div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+<br /><br /><br /><br />
+
+<h2 style="text-align: center;">List of all tasks</h2>
+
+<br />
+
+<table class="table table-bordered table-dark table-striped">
+    <thead class="font-weight-bold">
+        <tr>
+            <td>Category</td>
+            <td>Task</td>
+            <td>DueDate</td>
+            <td>Quadrant</td>
+            <td>Completed</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model)
+        {
+            <tr>
+                <td>@x.Category.CategoryName</td>
+                <td>@x.Task</td>
+                <td>@x.DueDate</td>
+                <td>@x.Quadrant</td>
+                <td>@x.Completed</td>
+                <td><a asp-controller="Home" asp-action="Edit" asp-route-taskid="@x.TaskId">Edit</a></td>
+                <td><a asp-controller="Home" asp-action="Delete" asp-route-taskid="@x.TaskId">Delete</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<br /><br />

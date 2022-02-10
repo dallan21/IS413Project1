@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
-<body style="background-color: lightsalmon" >
+<body style="background-color: lightsalmon">
     <header>
         <nav style="justify-content: center; display: inline-block; background-color: aquamarine">
             <div class="container">
@@ -17,10 +17,10 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="NewTaskForm">Add/Edit Task</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="NewTaskForm">Add Task</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Quadrants">Quadrants</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ListQuadrant">List Tasks</a>
                         </li>
                     </ul>
                 </div>
@@ -32,7 +32,6 @@
             @RenderBody()
         </main>
     </div>
-
     <div class="footer" style="background-color: aquamarine">
         <p style="text-align: center"> &copy; 2022 - IS413Project1</p>
     </div>

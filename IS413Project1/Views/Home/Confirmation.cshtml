@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Task Submitted";
+}
+@model IS413Project1.Models.NewTaskForm
+@if (Model.Task == "Do homework")
+{
+    <h2>Save this homework for another time.</h2>
+}
+else
+{
+    <h2>Task received. Make sure to do @Model.Task soon.</h2>
+}
+<a asp-controller="Home" asp-action="Index">Back to main page</a>

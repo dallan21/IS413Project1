@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace IS413Project1.Migrations
 {
     [DbContext(typeof(NewTaskContext))]
-    [Migration("20220208001551_Initial")]
+    [Migration("20220210041715_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -68,8 +68,9 @@ namespace IS413Project1.Migrations
                     b.Property<string>("DueDate")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Quadrant")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Quadrant")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Task")
                         .HasColumnType("TEXT");
@@ -79,6 +80,53 @@ namespace IS413Project1.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("responses");
+
+                    b.HasData(
+                        new
+                        {
+                            TaskId = 1,
+                            CategoryId = 2,
+                            Completed = false,
+                            DueDate = "	2022-02-11",
+                            Quadrant = "Quadrant 3",
+                            Task = "455 Homework"
+                        },
+                        new
+                        {
+                            TaskId = 2,
+                            CategoryId = 1,
+                            Completed = false,
+                            DueDate = "	2022-02-15",
+                            Quadrant = "Quadrant 1",
+                            Task = "Buy Groceries"
+                        },
+                        new
+                        {
+                            TaskId = 3,
+                            CategoryId = 2,
+                            Completed = false,
+                            DueDate = "2022-02-09",
+                            Quadrant = "Quadrant 1",
+                            Task = "Mission 6"
+                        },
+                        new
+                        {
+                            TaskId = 4,
+                            CategoryId = 4,
+                            Completed = false,
+                            DueDate = "2022-02-27",
+                            Quadrant = "Quadrant 2",
+                            Task = "Prepare Talk"
+                        },
+                        new
+                        {
+                            TaskId = 5,
+                            CategoryId = 2,
+                            Completed = false,
+                            DueDate = "2022-02-14",
+                            Quadrant = "Quadrant 4",
+                            Task = "Study for 403 Exam"
+                        });
                 });
 
             modelBuilder.Entity("IS413Project1.Models.NewTaskForm", b =>
